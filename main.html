@@ -8,10 +8,69 @@
     <script src="pomodoro.js"></script>
 </head>
 <body>
-<div class="welcome"></div>
-<div class="name"></div>
-<div class="signin"></div>
-<div class="signup"></div>
-div.
+    <div class="name">
+        <img src="logo.png" alt="Logo">
+    </div>
+<div class="welcome">
+    Welcome To Focus<br>Where Every Second Counts!
+</div>
+
+<div class="signin">
+    <form>
+        <div class="form_title">
+            Sign In
+        </div>
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type ="submit" value="Login">
+        Forgot password?
+        Don't have an account? Create account
+    </form>
+
+</div>
+<div class="signup">
+    <form>
+        <div class="form_title">
+            Sign Up
+        </div>
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="repassword">Repeat Password</label><br>
+        <input type="password" id="repassword" name="repassword"><br>
+        <input type ="submit" value="Register">
+    </form>
+</div>
+<div class="quote">api quote of the day</div>
+<div class="time">00:00:00</div>
+<div class="todo">
+    <div class="title">Main Goals</div>
+    <div class="subtitle">What do you want to achieve today?</div>
+    <ul id="todo"></ul>
+    <input type="text" id="todoInput">
+    <!-- add event listener in java script to add the todo list when i hit enter -->
+</div>
+<div class="theme"></div>
+<div class="main_goal">
+    <!-- innerhtml will be the same as the top todolist -->
+</div>
+<div class="settings">
+    <label for="pomlength">Pomodoro Length</label><br>
+    <input type="number" id="pomlength" name="pomlength" placeholder="mins" min="0" step="5"><br>
+    <label for="short">Short Break</label><br>
+    <input type="number" id="short" name="short" placeholder="mins" min="0" step="5"><br>
+    <label for="long">Long Break</label><br>
+    <input type="number" id="long" name="long" placeholder="mins" min="0" step="5"><br>
+    <label for="cycle">How many cycles before the long break?</label><br>
+    <input type="number" id="cycle" name="cycle" placeholder="mins" min="0"><br>
+</div>
+<div class="digpom">
+    <button id="digpom">Digital Clock</button> 
+    <!-- if it is digital clock then click on it then it will become pomodoro timer -->
+</div>
+<div class="tomato"></div>
 </body>
 </html>
